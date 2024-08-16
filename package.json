@@ -10,8 +10,7 @@
   ],
   "scripts": {
     "dev": "rollup -c --watch",
-    "build": "rollup -c",
-    "postinstall": "npm run build"
+    "build": "rollup -c"
   },
   "author": "",
   "license": "ISC",
