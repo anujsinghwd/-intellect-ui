@@ -7,7 +7,7 @@ interface InputProps {
   type?: string;
 }
 
-const Input: React.FC<InputProps> = ({ value, onChange, placeholder, type = 'text' }: InputProps) => {
+const Input: React.FC<InputProps> = ({ value, onChange, placeholder, type = 'text' }) => {
   return (
     <input
       type={type}
