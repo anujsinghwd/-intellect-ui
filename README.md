@@ -1,4 +1,4 @@
-# **Intellect Component Library**
+# **Intellect UI Library**
 
 ## **Table of Contents**
 
@@ -54,7 +54,7 @@ This library is designed using Atomic Design principles and organized into compo
 ### **Core Concepts**
 
 - **Atomic Design**: A methodology for creating design systems by breaking down the interface into smaller, reusable components.
-- **Component Isolation**: Components are self-contained with their own styles, tests, and stories.
+- **Component Isolation**: Components are self-contained with their own styles.
 - **TypeScript**: Provides type safety and improves code quality.
 
 ### **Component Flow**
