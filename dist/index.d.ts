@@ -33,4 +33,12 @@ interface BasicTemplateProps {
 }
 declare const BasicTemplate: React.FC<BasicTemplateProps>;
 
-export { BasicTemplate, Button, Card, Header, HomePage, Input };
+declare const fetchData: (url: string) => Promise<unknown>;
+
+declare const logError: (error: Error) => void;
+declare const logInfo: (message: string) => void;
+
+declare const formatDate: (date: Date) => string;
+declare const capitalize: (text: string) => string;
+
+export { BasicTemplate, Button, Card, Header, HomePage, Input, capitalize, fetchData, formatDate, logError, logInfo };

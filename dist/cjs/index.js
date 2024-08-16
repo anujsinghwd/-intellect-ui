@@ -4205,10 +4205,41 @@ const BasicTemplate = ({ children }) => {
     return (jsxRuntimeExports.jsxs("div", { children: [jsxRuntimeExports.jsx(Header, { title: "Template Header" }), jsxRuntimeExports.jsx("main", { children: children })] }));
 };
 
+const fetchData = async (url) => {
+    const response = await fetch(url);
+    if (!response.ok) {
+        throw new Error("Failed to fetch data");
+    }
+    return response.json();
+};
+
+const logError = (error) => {
+    console.error("Logging error:", error.message);
+};
+const logInfo = (message) => {
+    console.log("Info:", message);
+};
+
+const formatDate = (date) => {
+    return date.toLocaleDateString("en-US", {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+    });
+};
+const capitalize = (text) => {
+    return text.charAt(0).toUpperCase() + text.slice(1);
+};
+
 exports.BasicTemplate = BasicTemplate;
 exports.Button = Button;
 exports.Card = Card;
 exports.Header = Header;
 exports.HomePage = HomePage;
 exports.Input = Input;
+exports.capitalize = capitalize;
+exports.fetchData = fetchData;
+exports.formatDate = formatDate;
+exports.logError = logError;
+exports.logInfo = logInfo;
 //# sourceMappingURL=index.js.map
