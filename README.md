@@ -42,8 +42,10 @@ To set up the project locally, follow these steps:
 3. **Start the development server:**
 
     ```bash
-    npm run dev
+    npm run storybook
     ```
+
+   Navigate to `http://localhost:6006` to view the Storybook or `http://localhost:3000` to view any example application.
 
 # **System Design**
 
@@ -56,6 +58,7 @@ This library is designed using Atomic Design principles and organized into compo
 - **Atomic Design**: A methodology for creating design systems by breaking down the interface into smaller, reusable components.
 - **Component Isolation**: Components are self-contained with their own styles.
 - **TypeScript**: Provides type safety and improves code quality.
+- **Storybook**: Used for isolated component development and as a living documentation tool.
 
 ### **Component Flow**
 
